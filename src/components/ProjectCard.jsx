@@ -112,9 +112,11 @@ export default function ProjectCard({ project, isWide }) {
       </div>
 
       {/* Cursor Mask */}
-      <div
+      <a 
+      href={project.link}
+      target="_blank"
         ref={cursorRef}
-        className="absolute -top-14 -left-11 w-24 h-24 bg-[#00e676] rounded-full pointer-events-none flex items-center justify-center"
+        className="absolute -top-14 -left-11 w-24 h-24 bg-[#00e676] rounded-full  flex items-center justify-center"
         style={{ opacity: 0, transform: "scale(0)" }} // Hidden by default
       >
         <span
@@ -123,7 +125,7 @@ export default function ProjectCard({ project, isWide }) {
         >
           View
         </span>
-      </div>
+      </a>
     </div>
   );
 }

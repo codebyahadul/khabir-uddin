@@ -3,7 +3,7 @@ import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import { ArrowUpRight, Github } from "lucide-react";
 import { useRef, useState } from "react";
-const Card = ({ title, image, isActive }) => {
+const Card = ({ title, image, link, isActive, handleMouseIsEnter, handleMouseIsLeave }) => {
     const [hovered, setHovered] = useState(false);
     const timeoutRef = useRef(null);
     const cursorRef = useRef(null);
@@ -78,10 +78,17 @@ const Card = ({ title, image, isActive }) => {
     };
 
     return (
-        <div
+        <a href={link} target="_blank" >
+            <div
             ref={cardRef}
-            onMouseEnter={handleMouseEnter}
-            onMouseLeave={handleMouseLeave}
+            onMouseEnter={() => {
+                handleMouseEnter();
+                handleMouseIsEnter();
+              }}
+              onMouseLeave={() => {
+                handleMouseLeave();
+                handleMouseIsLeave();
+              }}
             className={`group relative overflow-hidden rounded-3xl h-[230px] md:h-[400px] cursor-pointer transition-all duration-300 ${isActive ? "scale-110 z-10" : "scale-90"
                 }`}
         >
@@ -105,7 +112,7 @@ const Card = ({ title, image, isActive }) => {
             {/* Cursor Mask */}
             <div
                 ref={cursorRef}
-                className="absolute -top-14 -left-11 w-24 h-24 bg-[#00e676] rounded-full pointer-events-none flex items-center justify-center"
+                className="absolute hidden -top-14 -left-11 w-24 h-24 bg-[#00e676] rounded-full  md:flex items-center justify-center"
                 style={{ opacity: 0, transform: "scale(0)" }} // Hidden by default
             >
                 <span
@@ -116,6 +123,7 @@ const Card = ({ title, image, isActive }) => {
                 </span>
             </div>
         </div>
+        </a>
     );
 };
 

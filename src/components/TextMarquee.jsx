@@ -42,10 +42,10 @@ const TextMarquee = () => {
     <div className="scroll bg-zinc-950 text-white flex justify-center items-center">
       <div className="text-marquee relative flex items-center overflow-hidden -mt-24 md:-mt-48">
         <div className="text-single leading-none whitespace-nowrap relative will-change-transform">
-          <span className="text js-text inline-block mr-8 font-semibold text-[5rem] md:text-[12rem]">Md Khabir Uddin -</span>
-          <span className="text js-text inline-block mr-8 font-semibold text-[5rem] md:text-[12rem]">Md Khabir Uddin -</span>
-          <span className="text js-text inline-block mr-8 font-semibold text-[5rem] md:text-[12rem]">Md Khabir Uddin -</span>
-          <span className="text js-text inline-block mr-8 font-semibold text-[5rem] md:text-[12rem]">Md Khabir Uddin -</span>
+          <span className="text js-text inline-block mr-8 font-semibold text-[5rem] md:text-[12rem]">Md Kabir Uddin -</span>
+          <span className="text js-text inline-block mr-8 font-semibold text-[5rem] md:text-[12rem]">Md Kabir Uddin -</span>
+          <span className="text js-text inline-block mr-8 font-semibold text-[5rem] md:text-[12rem]">Md Kabir Uddin -</span>
+          <span className="text js-text inline-block mr-8 font-semibold text-[5rem] md:text-[12rem]">Md Kabir Uddin -</span>
         </div>
       </div>
     </div>

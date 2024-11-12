@@ -56,9 +56,9 @@ const Hero = () => {
                     </p>
                     {/* Download CV Button and Icons */}
                     <div className="flex items-center space-x-4 mb-6">
-                        <a href="/cv.pdf" download={'Khabir CV'}><Button text={'Download CV'} bg={'bg-[#ff9e14]'} icon={<FaDownload />} /></a>
-                        <Button bg={'bg-[#ff9e14]'} size='p-3' text={<FaLinkedin className="w-4 h-4" />} />
-                        <Button bg={'bg-[#ff9e14]'} size='p-3' text={<FaGithub className="w-4 h-4" />} />
+                        <a href="/cv.pdf" download={'Kabir Uddin CV'}><Button text={'Download CV'} bg={'bg-[#00e676]'} icon={<FaDownload />} /></a>
+                        <Button bg={'bg-[#00e676]'} size='p-3' text={<FaLinkedin className="w-4 h-4" />} />
+                        <Button bg={'bg-[#00e676]'} size='p-3' text={<FaGithub className="w-4 h-4" />} />
                     </div>
                 </div>
 

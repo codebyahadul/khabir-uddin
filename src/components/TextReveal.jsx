@@ -69,7 +69,7 @@ const TextReveal = () => {
             {line.includes("WordPress Developer") ? (
               <>
                 {"I'm a "}
-                <span className="senior-wordPress-developer text-green-500 opacity-50">
+                <span className="senior-wordPress-developer text-[#00e676] ">
                 Senior WordPress Developer
                 </span>
                 {""}
