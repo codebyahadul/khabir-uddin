@@ -3,6 +3,7 @@ import bg from '../assets/images/footerImg.png'
 import { PhoneCall } from "lucide-react";
 import { MdEmail } from "react-icons/md";
 import { FaDribbble, FaGithub } from "react-icons/fa";
+import { FaSquareUpwork } from "react-icons/fa6";
 /* eslint-disable react/prop-types */
 const SocialLink = ({ platform, username, icon }) => (
     <div className="flex flex-row-reverse items-center justify-between">
@@ -49,17 +50,17 @@ export default function Footer() {
                     <div className="border-t border-[#FDFDFD59] pt-4">
                         <SocialLink
                             platform="GitHub"
-                            username="@khabiruddin"
+                            username="@kabiruddin"
                             icon={<FaGithub className="w-8 h-8 text-white"/>}
                         />
                     </div>
-                    <div className="border-t border-[#FDFDFD59] pt-4">
+                    <a href="https://www.upwork.com/freelancers/~0158e92b07984cda75" target="_blank" className="border-t border-[#FDFDFD59] pt-4">
                         <SocialLink
-                            platform="Dribbble"
-                            username="@khabiruddin"
-                            icon={<FaDribbble className="w-8 h-8 text-white"/>}
+                            platform="Up work"
+                            username="@kabir"
+                            icon={<FaSquareUpwork className="w-8 h-8" />}
                         />
-                    </div>
+                    </a>
                 </div>
             </div>
         </footer>
